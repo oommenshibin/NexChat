@@ -4,7 +4,10 @@ from dotenv import load_dotenv
 from groq import Groq
 
 load_dotenv()
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))
+
+
+GROQ_API_KEY = "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"  
+client = Groq(api_key=GROQ_API_KEY)
 
 # Page Config
 st.set_page_config(
@@ -14,7 +17,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enhanced Modern CSS
+#  CSS
 st.markdown("""
     <style>
     /* Main Background */
