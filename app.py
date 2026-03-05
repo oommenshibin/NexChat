@@ -3,7 +3,7 @@ import streamlit as st
 from groq import Groq
 
 # Hardcoded Groq API key (no dotenv/env needed)
-GROQ_API_KEY = "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"  
+GROQ_API_KEY = "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"  
 client = Groq(api_key=GROQ_API_KEY)
 
 # Page Config
@@ -140,3 +140,4 @@ if prompt := st.chat_input("Type your message here..."):
             full_response = "I encountered an error connecting to the engine."
 
     st.session_state.messages.append({"role": "assistant", "content": full_response})
+
