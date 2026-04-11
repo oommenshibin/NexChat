@@ -3,7 +3,7 @@ import streamlit as st
 from groq import Groq
 
 # Hardcoded Groq API key (no dotenv/env needed)
-GROQ_API_KEY = "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"  
+GROQ_API_KEY = "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"  
 client = Groq(api_key=GROQ_API_KEY)
 
 # Page Config
